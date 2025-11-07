@@ -8,7 +8,7 @@ export default function Footer() {
         
         {/* Left */}
         <p className="mb-4 md:mb-0">
-          © {new Date().getFullYear()} Plantify AI. All rights reserved.
+          © {new Date().getFullYear()} planiFy AI. All rights reserved.
         </p>
 
         {/* Right */}
