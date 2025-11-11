@@ -11,7 +11,7 @@ export default function ClientProvidersLayout({
   children: React.ReactNode;
 }) {
   const path = usePathname();
-  const authPaths = ["/login", "/signup"];
+  const authPaths = ["/"];
 
   return (
     <div className="relative">
@@ -21,7 +21,7 @@ export default function ClientProvidersLayout({
       </div>
 
       {/* navbar except auth pages */}
-      {!authPaths.includes(path) && <Navbar />}
+      {authPaths.includes(path) && <Navbar />}
 
       {children}
 

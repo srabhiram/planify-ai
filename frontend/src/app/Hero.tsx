@@ -2,6 +2,7 @@
 import { ContainerTextFlip } from "@/components/ui/container-text-flip";
 import { ShineBorder } from "@/components/ui/shine-border";
 import WhatWeOffer from "@/components/WhatWeOffer";
+import Link from "next/link";
 import React from "react";
 
 const Hero: React.FC = () => {
@@ -21,10 +22,10 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Button */}
-          <button className="relative mt-6 p-3 md:p-4 text-lg md:text-2xl font-semibold rounded-xl bg-zinc-950">
+          <Link href={"/chat/new"} className="relative mt-6 p-3 md:p-4 text-lg md:text-2xl font-semibold rounded-xl bg-zinc-950">
             <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B"]} />
-            Get Started
-          </button>
+            Try now
+          </Link>
         </section>
       </div>
       <WhatWeOffer/>

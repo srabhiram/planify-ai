@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
+import { ShineBorder } from "./ui/shine-border"
 
 export function LoginForm({
   className,
@@ -22,7 +23,8 @@ export function LoginForm({
 }: React.ComponentProps<"div">) {
   return (
     <div className={cn("flex flex-col gap-6", className)} {...props}>
-      <Card>
+      <Card className="relative">
+        <ShineBorder shineColor={"white"}/>
         <CardHeader>
           <CardTitle>Login to your account</CardTitle>
           <CardDescription>
